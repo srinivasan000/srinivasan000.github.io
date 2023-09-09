@@ -46,3 +46,15 @@ nav.forEach(links=>{
 const typed=new Typed(".multiple-text",{
     strings:["Web Developer","YouTuber","Full Stack Developer"],typeSpeed:100,backSpeed:100,backDelay:100,loop:true
 });
+
+
+// form 
+
+const send =()=>{
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let mobile = document.getElementById("mobile").value;
+    let subject = document.getElementById("subject").value;
+    let msg = document.getElementById("msg").value;
+    alert(`##### Form Submited #####\n\nName:${name}\nEmail:${email}\nMobile Number:${mobile}\nSubject:${subject}\nMessage:${msg}`);
+}

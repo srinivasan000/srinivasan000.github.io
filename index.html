@@ -194,18 +194,19 @@
             <h2 class="heading">Contact
                 <span>Me!</span>
             </h2>
-            <form action="#">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfDUvBQ_nu3w3oydBQG8TmQ4tLz2t5riPW4wpyYJh-MrYNwAQ/formResponse" method="post" target="submited">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Full Name" id="name" name="entry.533517653" required>
+                    <input type="email" placeholder="Email Address" id="email" name="entry.1886932176" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <input type="text" placeholder="Subject" required>
+                    <input type="number" placeholder="Mobile Number" id="mobile" name="entry.1639113372" required>
+                    <input type="text" placeholder="Subject" id="subject" name="entry.593798643" required>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn"/>
+                <textarea cols="30" rows="10" placeholder="Your Message" id="msg" name="entry.1292524454" required></textarea>
+                <input type="submit" value="Send Message" class="btn" onclick="send()"/>
             </form>
+            <iframe id="submited" name="submited" style="display:none;"></iframe>
         </section>
 
 
